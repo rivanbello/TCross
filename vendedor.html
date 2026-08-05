@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔥 T-Cross Highline 2022 — Oportunidade!</title>
+<meta name="description" content="VW T-Cross Highline 2022 branca, 46 mil km, impecável. Segundo dono, quitada. Chame no WhatsApp!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0E1330;
+    --ink-2:#182050;
+    --blue:#1F4BE0;
+    --sky:#3B82F6;
+    --pop:#FF4D2E;      /* laranja urgência */
+    --pop-2:#FFB020;    /* amarelo selo */
+    --wa:#25D366;
+    --paper:#FFFFFF;
+    --mist:#E8ECF7;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Sora',sans-serif;
+    background:var(--ink);
+    color:var(--paper);
+    overflow-x:hidden;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:520px;margin:0 auto;position:relative}
+  .cond{font-family:'Barlow Condensed',sans-serif}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    padding:20px 20px 26px;
+    background:
+      radial-gradient(120% 90% at 50% -10%, #26307A 0%, var(--ink) 60%);
+    text-align:center;overflow:hidden;
+  }
+  .flash{
+    display:inline-flex;align-items:center;gap:7px;
+    background:var(--pop);color:#fff;font-weight:800;
+    font-size:12px;letter-spacing:.06em;text-transform:uppercase;
+    padding:7px 15px;border-radius:30px;
+    box-shadow:0 6px 22px rgba(255,77,46,.45);
+    animation:pulse 1.8s ease-in-out infinite;
+  }
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+  h1{
+    font-family:'Barlow Condensed';
+    font-weight:800;font-size:clamp(44px,15vw,68px);
+    line-height:.92;letter-spacing:.01em;text-transform:uppercase;
+    margin:16px 0 6px;
+  }
+  h1 .hl{
+    background:linear-gradient(100deg,var(--pop-2),var(--pop));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .tags{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:14px}
+  .tag{
+    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);
+    padding:6px 13px;border-radius:20px;font-size:13px;font-weight:600;
+  }
+
+  /* ---------- GALERIA ---------- */
+  .gallery{position:relative;margin-top:8px}
+  .frame{
+    position:relative;aspect-ratio:4/3;overflow:hidden;
+    background:var(--ink-2);border-radius:18px 18px 0 0;
+  }
+  .slide{position:absolute;inset:0;opacity:0;transition:opacity .45s}
+  .slide.active{opacity:1}
+  .slide img{width:100%;height:100%;object-fit:cover;display:block}
+  .placeholder{
+    width:100%;height:100%;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:12px;
+    background:linear-gradient(135deg,#1B2560,#141A45);
+    color:#7C8BD6;
+  }
+  .placeholder svg{width:44px;height:44px;opacity:.55}
+  .placeholder .lbl{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:13px}
+  .counter{
+    position:absolute;top:12px;right:12px;z-index:3;
+    background:rgba(14,19,48,.78);padding:5px 12px;border-radius:20px;
+    font-weight:700;font-size:12px;
+  }
+  .badge-corner{
+    position:absolute;top:12px;left:12px;z-index:3;
+    background:var(--pop-2);color:#3A2500;font-weight:800;
+    font-size:12px;padding:6px 12px;border-radius:8px;
+    letter-spacing:.02em;transform:rotate(-3deg);
+    box-shadow:0 4px 14px rgba(0,0,0,.3);
+  }
+  .nav{
+    position:absolute;top:50%;transform:translateY(-50%);z-index:3;
+    width:42px;height:42px;border-radius:50%;border:none;cursor:pointer;
+    background:rgba(14,19,48,.7);color:#fff;font-size:22px;
+    display:flex;align-items:center;justify-content:center;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .nav.prev{left:10px}.nav.next{right:10px}
+  .dots{display:flex;gap:7px;justify-content:center;padding:14px 0 4px;background:var(--ink)}
+  .dot{width:8px;height:8px;border-radius:50%;background:#2B3572;cursor:pointer;transition:.25s}
+  .dot.active{background:var(--pop-2);width:24px;border-radius:5px}
+
+  /* ---------- PREÇO ---------- */
+  .price-block{
+    margin:14px 16px 0;padding:24px 20px;border-radius:20px;
+    background:linear-gradient(135deg,var(--blue),#1636B8);
+    text-align:center;position:relative;overflow:hidden;
+    box-shadow:0 12px 30px rgba(31,75,224,.35);
+  }
+  .price-block::after{
+    content:"";position:absolute;top:-40%;right:-20%;
+    width:200px;height:200px;border-radius:50%;
+    background:radial-gradient(circle,rgba(255,255,255,.18),transparent 70%);
+  }
+  .price-label{font-weight:600;font-size:13px;opacity:.85;letter-spacing:.05em;text-transform:uppercase;position:relative}
+  .price{font-family:'Barlow Condensed';font-weight:800;font-size:clamp(52px,17vw,74px);line-height:1;letter-spacing:.01em;position:relative}
+  .price .cur{font-size:.4em;vertical-align:super;margin-right:4px;opacity:.85}
+  .price-sub{font-size:13px;opacity:.9;margin-top:6px;position:relative}
+
+  /* ---------- FICHA ---------- */
+  .specs{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
+    padding:20px 16px;
+  }
+  .spec{
+    background:var(--ink-2);border:1px solid rgba(255,255,255,.07);
+    border-radius:14px;padding:14px 8px;text-align:center;
+  }
+  .spec .ic{font-size:20px;margin-bottom:4px}
+  .spec .v{font-family:'Barlow Condensed';font-weight:700;font-size:20px;line-height:1}
+  .spec .k{font-size:10px;opacity:.65;text-transform:uppercase;letter-spacing:.06em;margin-top:3px}
+
+  /* ---------- SELOS ---------- */
+  .badges{padding:6px 16px 20px;display:grid;gap:10px}
+  .badge{
+    display:flex;align-items:center;gap:13px;
+    background:linear-gradient(120deg,rgba(37,211,102,.12),transparent);
+    border:1px solid rgba(37,211,102,.28);
+    border-radius:14px;padding:14px 16px;
+  }
+  .badge .ck{
+    flex-shrink:0;width:30px;height:30px;border-radius:50%;
+    background:var(--wa);color:#06331B;font-weight:800;
+    display:flex;align-items:center;justify-content:center;font-size:16px;
+  }
+  .badge .t{font-weight:700;font-size:15px}
+  .badge .d{font-size:12.5px;opacity:.75;margin-top:1px}
+
+  /* ---------- CTA ---------- */
+  .cta-wrap{padding:8px 20px 130px;text-align:center}
+  .cta-wrap .big{font-family:'Barlow Condensed';font-weight:800;font-size:30px;text-transform:uppercase;line-height:1.05;margin-bottom:8px}
+  .cta-wrap p{opacity:.8;font-size:15px;max-width:330px;margin:0 auto 20px}
+  .cta{
+    display:inline-flex;align-items:center;justify-content:center;gap:11px;
+    width:100%;max-width:400px;
+    background:var(--wa);color:#06331B;font-weight:800;font-size:18px;
+    padding:18px 24px;border-radius:16px;text-decoration:none;
+    box-shadow:0 10px 26px rgba(37,211,102,.4);
+    transition:transform .18s;
+  }
+  .cta:active{transform:scale(.97)}
+  .cta svg{width:24px;height:24px}
+
+  /* sticky */
+  .sticky{
+    position:fixed;bottom:0;left:0;right:0;z-index:50;
+    padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+    display:flex;justify-content:center;
+    background:linear-gradient(to top,var(--ink) 65%,transparent);
+  }
+  .sticky .inner{
+    width:100%;max-width:520px;display:flex;align-items:center;gap:12px;
+    background:var(--ink-2);border:1px solid rgba(255,255,255,.1);
+    border-radius:16px;padding:10px 10px 10px 16px;
+    box-shadow:0 -4px 24px rgba(0,0,0,.4);
+  }
+  .sticky .p{flex:1}
+  .sticky .p .pl{font-size:10px;opacity:.6;text-transform:uppercase;letter-spacing:.1em}
+  .sticky .p .pv{font-family:'Barlow Condensed';font-weight:800;font-size:24px;line-height:1}
+  .sticky .cta{width:auto;padding:14px 20px;font-size:15px;box-shadow:none}
+
+  footer{text-align:center;padding:20px;font-size:11px;opacity:.4;letter-spacing:.06em}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <section class="hero">
+    <span class="flash">🔥 Oportunidade única</span>
+    <h1>T-Cross<br><span class="hl">Highline</span></h1>
+    <div class="tags">
+      <span class="tag">🚗 Branca</span>
+      <span class="tag">⚙️ Automática</span>
+      <span class="tag">⛽ 1.4 TSI 150cv</span>
+      <span class="tag">📅 2022</span>
+      <span class="tag">💳 Financio</span>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="frame" id="frame">
+      <span class="badge-corner">IMPECÁVEL</span>
+      <div class="counter"><span id="cur">1</span>/<span id="tot">5</span></div>
+      <button class="nav prev" onclick="go(-1)" aria-label="Anterior">‹</button>
+      <button class="nav next" onclick="go(1)" aria-label="Próxima">›</button>
+    </div>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <section class="price-block">
+    <div class="price-label">De particular, por apenas</div>
+    <div class="price"><span class="cur">R$</span>120.000</div>
+    <div class="price-sub">✅ Documentação 100% quitada · sem dor de cabeça</div>
+  </section>
+
+  <section class="specs">
+    <div class="spec"><div class="ic">🛣️</div><div class="v">46 mil</div><div class="k">Km</div></div>
+    <div class="spec"><div class="ic">⚙️</div><div class="v">Auto</div><div class="k">Câmbio</div></div>
+    <div class="spec"><div class="ic">📅</div><div class="v">21/22</div><div class="k">Ano</div></div>
+    <div class="spec"><div class="ic">🐎</div><div class="v">150cv</div><div class="k">1.4 TSI</div></div>
+    <div class="spec"><div class="ic">⛽</div><div class="v">Flex</div><div class="k">Combust.</div></div>
+    <div class="spec"><div class="ic">⭐</div><div class="v">Top</div><div class="k">Highline</div></div>
+  </section>
+
+  <section class="badges">
+    <div class="badge"><div class="ck">✓</div><div><div class="t">Nunca bateu, impecável</div><div class="d">Lataria e interior originais, sem retoques</div></div></div>
+    <div class="badge"><div class="ck">✓</div><div><div class="t">Tudo quitado e sem multas</div><div class="d">IPVA em dia, pronta pra transferir</div></div></div>
+    <div class="badge"><div class="ck">✓</div><div><div class="t">Segundo dono, super cuidada</div><div class="d">Histórico conhecido, bem conservada</div></div></div>
+    <div class="badge"><div class="ck">✓</div><div><div class="t">Financiamento por todos os bancos</div><div class="d">Facilito sua compra com as melhores condições</div></div></div>
+    <div class="badge" style="background:linear-gradient(120deg,rgba(255,77,46,.12),transparent);border-color:rgba(255,77,46,.3)"><div class="ck" style="background:var(--pop);color:#fff">!</div><div><div class="t">Somente à vista ou financiamento</div><div class="d">Não aceito troca de nenhum tipo · não negocio com lojistas</div></div></div>
+  </section>
+
+  <section class="cta-wrap">
+    <div class="big">Gostou? Chama agora!</div>
+    <p>Respondo rápido no WhatsApp e tiro todas as suas dúvidas. Dá pra agendar pra ver de perto.</p>
+    <a class="cta" href="https://wa.me/5541999186685?text=Ol%C3%A1!%20Vi%20o%20an%C3%BAncio%20da%20T-Cross%20Highline%20branca%202022%20e%20tenho%20interesse.%20Podemos%20conversar%3F" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.94-.26-.1-.45-.15-.65.15-.19.29-.74.94-.91 1.13-.17.19-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.08-.15-.65-1.57-.9-2.15-.24-.57-.48-.49-.65-.5h-.56c-.19 0-.5.07-.77.36-.26.29-1 .98-1 2.4s1.03 2.79 1.17 2.98c.15.19 2.02 3.08 4.9 4.32.68.29 1.22.47 1.63.6.69.22 1.31.19 1.8.11.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.56-.34z"/><path d="M12 2a10 10 0 00-8.6 15.06L2 22l5.06-1.32A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.18-1.14l-.3-.18-3 .78.8-2.92-.2-.31A8.2 8.2 0 1112 20.2z"/></svg>
+      Falar no WhatsApp agora
+    </a>
+  </section>
+
+  <footer>T-Cross Highline · Anúncio de particular</footer>
+</div>
+
+<div class="sticky">
+  <div class="inner">
+    <div class="p"><div class="pl">Valor à vista</div><div class="pv">R$ 120.000</div></div>
+    <a class="cta" href="https://wa.me/5541999186685?text=Ol%C3%A1!%20Vi%20o%20an%C3%BAncio%20da%20T-Cross%20Highline%20branca%202022%20e%20tenho%20interesse.%20Podemos%20conversar%3F" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.94-.26-.1-.45-.15-.65.15-.19.29-.74.94-.91 1.13-.17.19-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.08-.15-.65-1.57-.9-2.15-.24-.57-.48-.49-.65-.5h-.56c-.19 0-.5.07-.77.36-.26.29-1 .98-1 2.4s1.03 2.79 1.17 2.98c.15.19 2.02 3.08 4.9 4.32.68.29 1.22.47 1.63.6.69.22 1.31.19 1.8.11.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.56-.34z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</div>
+
+<script>
+  /* =========================================================
+     FOTOS — basta subir as imagens na pasta "fotos" com estes
+     nomes; enquanto não existirem, aparece o placeholder.
+     ========================================================= */
+  const fotos = [
+    { src: "fotos/frente.jpg",   label: "Frente" },
+    { src: "fotos/lateral.jpg",  label: "Lateral" },
+    { src: "fotos/traseira.jpg", label: "Traseira" },
+    { src: "fotos/interior.jpg", label: "Interior / Painel" },
+    { src: "fotos/detalhes.jpg", label: "Detalhes" },
+  ];
+
+  const ph = (label) => `
+    <div class="placeholder">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/>
+      </svg>
+      <div class="lbl">${label}</div>
+    </div>`;
+
+  const frame = document.getElementById('frame');
+  const dots  = document.getElementById('dots');
+  let idx = 0;
+
+  fotos.forEach((f, i) => {
+    const s = document.createElement('div');
+    s.className = 'slide' + (i === 0 ? ' active' : '');
+    if (f.src) {
+      const img = document.createElement('img');
+      img.src = f.src;
+      img.alt = f.label;
+      img.onerror = () => { s.innerHTML = ph(f.label); };
+      s.appendChild(img);
+    } else {
+      s.innerHTML = ph(f.label);
+    }
+    frame.insertBefore(s, frame.querySelector('.badge-corner'));
+
+    const d = document.createElement('div');
+    d.className = 'dot' + (i === 0 ? ' active' : '');
+    d.onclick = () => set(i);
+    dots.appendChild(d);
+  });
+
+  document.getElementById('tot').textContent = fotos.length;
+  const slides = () => frame.querySelectorAll('.slide');
+  const dotEls = () => dots.querySelectorAll('.dot');
+
+  function set(n){
+    idx = (n + fotos.length) % fotos.length;
+    slides().forEach((s,i)=>s.classList.toggle('active', i===idx));
+    dotEls().forEach((d,i)=>d.classList.toggle('active', i===idx));
+    document.getElementById('cur').textContent = idx + 1;
+  }
+  function go(dir){ set(idx + dir); }
+
+  let x0 = null;
+  frame.addEventListener('touchstart', e => x0 = e.touches[0].clientX, {passive:true});
+  frame.addEventListener('touchend', e => {
+    if (x0 === null) return;
+    const dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 40) go(dx < 0 ? 1 : -1);
+    x0 = null;
+  });
+</script>
+</body>
+</html>
