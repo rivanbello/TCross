@@ -1,12 +1,10 @@
 # Pasta de fotos
 
-Suba aqui as fotos do carro com estes nomes exatos (formato .jpg):
+Fotos atuais do anúncio (otimizadas para web, máx. 1400 px):
 
-- `frente.jpg`
-- `lateral.jpg`
-- `traseira.jpg`
-- `interior.jpg`
-- `detalhes.jpg`
+- `frente.jpg` / `frente-2.jpg` / `frente-detalhe.jpg`
+- `traseira.jpg` / `traseira-detalhe.jpg`
+- `painel.jpg` / `motorista.jpg` / `bancos.jpg`
 
-Pelo site do GitHub: **Add file → Upload files**, arraste as fotos e
-clique em **Commit changes**. Em ~1 minuto elas aparecem nas páginas.
+Para trocar uma foto: suba um novo arquivo com o mesmo nome
+(**Add file → Upload files**) e confirme em **Commit changes**.
