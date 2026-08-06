@@ -338,5 +338,34 @@
     x0 = null;
   });
 </script>
+
+<!-- Contador de visitas (GoatCounter) + eventos de rolagem e clique no WhatsApp -->
+<script data-goatcounter="https://rivan.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+  (function(){
+    var pagina = 'vendedora';
+    function evento(nome){
+      if (window.goatcounter && goatcounter.count) {
+        goatcounter.count({ path: nome, title: nome, event: true });
+      }
+    }
+    var marcos = [{p:25,n:'rolou-25'},{p:50,n:'rolou-50'},{p:75,n:'rolou-75'},{p:98,n:'rolou-fim'}];
+    var vistos = {};
+    window.addEventListener('scroll', function(){
+      var total = document.documentElement.scrollHeight - window.innerHeight;
+      if (total <= 0) return;
+      var pct = (window.scrollY / total) * 100;
+      marcos.forEach(function(m){
+        if (pct >= m.p && !vistos[m.n]) {
+          vistos[m.n] = true;
+          evento(m.n + '-' + pagina);
+        }
+      });
+    }, {passive:true});
+    document.querySelectorAll('a.cta').forEach(function(a){
+      a.addEventListener('click', function(){ evento('clique-whatsapp-' + pagina); });
+    });
+  })();
+</script>
 </body>
 </html>
